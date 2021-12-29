@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-12-29 Wed 21:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Published Papers</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Harshvardhan J. Pandit" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="https://harshp.com/css/sitebase.css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Published Papers</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org6344009">1. ODRL Profile for Expressing Consent through Granular Access Control Policies in Solid</a></li>
+<li><a href="#org52d0af3">2. Building a Data Processing Activities Catalog</a></li>
+<li><a href="#org7ed49a4">3. Consent through the lens of Semantics - State of the Art and Best Practices</a></li>
+<li><a href="#org22b31e7">4. <span class="todo TODO">TODO</span> ODP Book Chapters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+<li><a href="#orga91b52a">5. Role of Identity, Identification, and Receipts for Consent&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span>&#xa0;<span class="_quick">_quick</span></span></a>
+<ul>
+<li><a href="#orga3abb53">5.1. Conference Registration</a></li>
+<li><a href="#orgacbd6c7">5.2. <span class="done DONE">DONE</span> Create Presentation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org3abdd6f">6. An Ontology for Standardising Trustworthy AI</a></li>
+<li><a href="#org46d5e9e">7. OpenIdentity - Identity and Consent</a>
+<ul>
+<li><a href="#org2105592">7.1. Reviews received: <code>[2/2]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a></li>
+<li><a href="#org17e2e1f">7.2. Camera-ready: <code>[0/0]</code></a>
+<ul>
+<li><a href="#org8b850cb">7.2.1. Submit Camera-Ready version <code>[3/4]</code></a></li>
+<li><a href="#org98e841e">7.2.2. Upload pre-print</a></li>
+</ul>
+</li>
+<li><a href="#org1406f19">7.3. Presentation: <code>[0/2]</code></a></li>
+<li><a href="#orgb03447a">7.4. Published: <code>[0/1]</code></a></li>
+</ul>
+</li>
+<li><a href="#orgf0ab96e">8. Crowd-sourcing Issues Across Domains for Automated Generation of Legal Complaints Regarding Consent</a>
+<ul>
+<li><a href="#orgfec8f93">8.1. <span class="done DONE">DONE</span> Reviews received: <code>[2/2]</code></a></li>
+<li><a href="#org1890628">8.2. Camera-ready: <code>[1/1]</code></a>
+<ul>
+<li><a href="#org78abd01">8.2.1. <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[3/4]</code></a></li>
+<li><a href="#org8fa184e">8.2.2. Upload pre-print</a></li>
+</ul>
+</li>
+<li><a href="#org4bbe941">8.3. <span class="done DONE">DONE</span> CHI Presentation: <code>[3/3]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a>
+<ul>
+<li><a href="#orgc7d1cad">8.3.1. <span class="done DONE">DONE</span> Register for IEEE S&amp;P&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orgc01504b">8.4. <span class="done DONE">DONE</span> Register for CHI Conference&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a></li>
+<li><a href="#org3119b54">8.5. <span class="done DONE">DONE</span> CHI Published: <code>[0/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org99b260e">9. [How] Do Users Benefit From Giving Consent?</a>
+<ul>
+<li><a href="#org1bf04e6">9.1. Camera-ready: <code>[1/1]</code></a>
+<ul>
+<li><a href="#org1ed720f">9.1.1. <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[3/4]</code></a></li>
+<li><a href="#orgbdb1494">9.1.2. Upload pre-print</a></li>
+</ul>
+</li>
+<li><a href="#orgf2e4dfb">9.2. <span class="done DONE">DONE</span> ConPro Presentation: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a>
+<ul>
+<li><a href="#org9222cd3">9.2.1. <span class="done DONE">DONE</span> Send name of Speaker to ConPro</a></li>
+</ul>
+</li>
+<li><a href="#org5f0e3a7">9.3. <span class="done DONE">DONE</span> ConPro Published: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orgf0b6c07">10. <span class="todo WAIT">WAIT</span> Standardization and the Governance of Artificial Intelligence Standards&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a>
+<ul>
+<li><a href="#orgd20300a">10.1. Upload pre-print</a>
+<ul>
+<li><a href="#org8ac5f29">10.1.1. Upload AI standardisation glossary pre-print to Zenodo&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+<li><a href="#org969b5d5">10.1.2. Upload AI standardisation glossary pre-print to TCD TARA&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+<li><a href="#org9d92be4">10.1.3. Ask Dave/PJ about pre-print for AI standardisation glossary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOMEDAY">__SOMEDAY</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org6e12677">10.2. AI standardisation glossary Published: <code>[0/1]</code></a></li>
+</ul>
+</li>
+<li><a href="#orgeb1db1e">11. Comparison of notice requirements for consent between ISO/IEC 29184:2020 and GDPR</a>
+<ul>
+<li><a href="#org9696a37">11.1. <span class="done DONE">DONE</span> 29184 x GDPR Published: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org20a2f7e">12. Semantic Schema Mapping for Interoperable Data-Exchange <code>[5/5]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="schema">schema</span></span></a>
+<ul>
+<li><a href="#orgf5f7ac2">12.1. <span class="done DONE">DONE</span> Submitting the Paper: <code>[7/8]</code></a></li>
+<li><a href="#org26e44b3">12.2. <span class="done DONE">DONE</span> Reviews received: <code>[2/2]</code></a></li>
+<li><a href="#org1f12e79">12.3. <span class="done DONE">DONE</span> Camera-ready: <code>[2/2]</code></a>
+<ul>
+<li><a href="#org3a4ca3f">12.3.1. <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[3/4]</code></a></li>
+<li><a href="#orgb1513af">12.3.2. <span class="done DONE">DONE</span> Upload pre-print</a></li>
+</ul>
+</li>
+<li><a href="#orgde0f2bd">12.4. <span class="done DONE">DONE</span> Presentation: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a>
+<ul>
+<li><a href="#org04c2126">12.4.1. <span class="done DONE">DONE</span> SCHEMA presentation</a></li>
+</ul>
+</li>
+<li><a href="#orgfbf7e4d">12.5. <span class="done DONE">DONE</span> Published: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orge33ba4a">13. A Common Semantic Model of the GDPR Register of Processing Activities <code>[4/4]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="dpv">dpv</span>&#xa0;<span class="ropa">ropa</span></span></a>
+<ul>
+<li><a href="#orgfde0d9c">13.1. <span class="done DONE">DONE</span> Submitting the Paper: <code>[7/8]</code></a></li>
+<li><a href="#orgdafb42c">13.2. <span class="done DONE">DONE</span> Reviews received: <code>[1/1]</code></a></li>
+<li><a href="#orgb1af76d">13.3. <span class="done DONE">DONE</span> Camera-ready: <code>[2/2]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NEXT">__NEXT</span></span></a>
+<ul>
+<li><a href="#org91fc49d">13.3.1. <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[4/4]</code></a></li>
+<li><a href="#orgf0032e8">13.3.2. <span class="done DONE">DONE</span> Upload pre-print</a></li>
+</ul>
+</li>
+<li><a href="#orgb07de4c">13.4. <span class="done DONE">DONE</span> Presentation: <code>[2/2]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orgab58b0a">14. Just-in-Time” Generation of Datasets by Considering Structured Representations of Given Consent for GDPR Compliance"</a>
+<ul>
+<li><a href="#org986200d">14.1. Reviews &amp; Camera-ready</a>
+<ul>
+<li><a href="#org95a612f">14.1.1. <span class="done DONE">DONE</span> Upload pre-print&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org600b7b6">14.2. Published</a>
+<ul>
+<li><a href="#org6dc9444">14.2.1. update entry with proceedings in harshp.com</a></li>
+<li><a href="#org6cf065a">14.2.2. update entry with proceedings in OpenScience</a></li>
+<li><a href="#org404e773">14.2.3. update entry with proceedings in TARA</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org216bfb5">15. Standardisation, Data Interoperability, and GDPR</a></li>
+<li><a href="#orgb702ad4">16. Creating A Vocabulary for Data Privacy</a></li>
+<li><a href="#orgeaf83dc">17. Explaining Disclosure Decisions Over Personal Data</a></li>
+<li><a href="#org4eb3a4f">18. OPN: Open Notice Receipt Schema</a></li>
+<li><a href="#org52ab710">19. Test-driven Approach Towards GDPR Compliance</a></li>
+<li><a href="#org0efd3cd">20. GConsent - A Consent Ontology based on the GDPR</a></li>
+<li><a href="#org9225bee">21. Towards Cataloguing Potential Derivations of Personal Data</a></li>
+<li><a href="#orgd157252">22. Towards Generating Policy-compliant Datasets</a></li>
+<li><a href="#orgf868415">23. An Exploration of Data Interoperability for GDPR</a></li>
+<li><a href="#org0544093">24. Investigating Conditional Data Value Under GDPR</a></li>
+<li><a href="#org460bb79">25. Exploring GDPR Compliance Over Provenance Graphs Using SHACL</a></li>
+<li><a href="#orgc7fa302">26. An Ontology Design Pattern for Describing Personal Data in Privacy Policies</a></li>
+<li><a href="#org9be80ba">27. Using Ontology Design Patterns to Define SHACL Shapes</a></li>
+<li><a href="#org0850d11">28. Towards Knowledge-based Systems for GDPR Compliance</a></li>
+<li><a href="#org4503261">29. Towards an Open Data Vocabulary for Canvas Driven Innovation Ethics</a></li>
+<li><a href="#orge8155d3">30. Queryable Provenance Metadata For GDPR Compliance</a></li>
+<li><a href="#orgb598a3d">31. Personalised Privacy Policies</a></li>
+<li><a href="#orgb9b92f1">32. Extracting Provenance Metadata from Privacy Policies</a></li>
+<li><a href="#org0ad40eb">33. GDPRtEXT - GDPR as a Linked Data Resource</a></li>
+<li><a href="#orgb88f353">34. GDPR-driven Change Detection in Consent and Activity Metadata</a></li>
+<li><a href="#org6ef9893">35. Exploring Linked Data For The Automatic Enrichment of Historical Archives</a></li>
+<li><a href="#org6e448ba">36. Exploring Linked Data For The Automatic Enrichment of Historical Archives</a></li>
+<li><a href="#orgae0e2bd">37. Discussing Ethical Impacts in Research and Innovation: The Ethics Canvas</a></li>
+<li><a href="#org1e04fff">38. GDPR Data Interoperability Model</a></li>
+<li><a href="#orgf6a97ed">39. Ease and Ethics of User Profiling in Black Mirror</a></li>
+<li><a href="#org6e6f9aa">40. Modelling provenance for GDPR compliance using linked open data vocabularies</a></li>
+<li><a href="#orgf3cc44f">41. Compliance through Informed Consent: Semantic Based Consent Permission and Data Management Model</a></li>
+<li><a href="#org631faa3">42. Linked Data Contracts to Support Data Protection and Data Ethics in the Sharing of Scientific Data</a></li>
+<li><a href="#org1ecccbd">43. Utilising Semantic Web Ontologies to publish Experimental Workflows</a></li>
+<li><a href="#org26f1002">44. The Use of Open Data to Improve the Repeatability of Adaptivity and Personalisation Experiment</a></li>
+<li><a href="#orgd4d5d8b">45. A model for contextual data sharing in smartphone applications</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6344009" class="outline-2">
+<h2 id="org6344009"><span class="section-number-2">1</span> ODRL Profile for Expressing Consent through Granular Access Control Policies in Solid</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> proceedings</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org52d0af3" class="outline-2">
+<h2 id="org52d0af3"><span class="section-number-2">2</span> Building a Data Processing Activities Catalog</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</div>
+<div id="outline-container-org7ed49a4" class="outline-2">
+<h2 id="org7ed49a4"><span class="section-number-2">3</span> Consent through the lens of Semantics - State of the Art and Best Practices</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</div>
+<div id="outline-container-org22b31e7" class="outline-2">
+<h2 id="org22b31e7"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> ODP Book Chapters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> create entries here</li>
+<li class="off"><code>[&#xa0;]</code> post text on website</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga91b52a" class="outline-2">
+<h2 id="orga91b52a"><span class="section-number-2">5</span> Role of Identity, Identification, and Receipts for Consent&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span>&#xa0;<span class="_quick">_quick</span></span></h2>
+<div class="outline-text-2" id="text-5">
+</div>
+
+<div id="outline-container-orga3abb53" class="outline-3">
+<h3 id="orga3abb53"><span class="section-number-3">5.1</span> Conference Registration</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><span class="timestamp-wrapper"><span class="timestamp">[2021-05-18 Tue] </span></span> <a href="//MjAyMS0wNS0xN1QxNToyMDowMS4wMDBaOyJEYW5pZWxhIE5lZGljIiA8ZGFuaWVsYS5uZWRpY0BpYW8uZnJhdW5ob2Zlci5kZT4=">registration email</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgacbd6c7" class="outline-3">
+<h3 id="orgacbd6c7"><span class="section-number-3">5.2</span> <span class="done DONE">DONE</span> Create Presentation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+</div>
+</div>
+<div id="outline-container-org3abdd6f" class="outline-2">
+<h2 id="org3abdd6f"><span class="section-number-2">6</span> An Ontology for Standardising Trustworthy AI</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+</div>
+<div id="outline-container-org46d5e9e" class="outline-2">
+<h2 id="org46d5e9e"><span class="section-number-2">7</span> OpenIdentity - Identity and Consent</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org2105592" class="outline-3">
+<h3 id="org2105592"><span class="section-number-3">7.1</span> Reviews received: <code>[2/2]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Analyse reviews (table with statement and action items)</li>
+<li class="on"><code>[X]</code> Make changes as per actions</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org17e2e1f" class="outline-3">
+<h3 id="org17e2e1f"><span class="section-number-3">7.2</span> Camera-ready: <code>[0/0]</code></h3>
+<div class="outline-text-3" id="text-7-2">
+</div>
+<div id="outline-container-org8b850cb" class="outline-4">
+<h4 id="org8b850cb"><span class="section-number-4">7.2.1</span> Submit Camera-Ready version <code>[3/4]</code></h4>
+<div class="outline-text-4" id="text-7-2-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare camera-ready version - incorporate <a href="//MjAyMS0wNC0xMFQxNDozOToyMi4wMDBaO1ZpdG9yIEplc3VzIDx2akB2aXRvcmplc3VzLmNvbT4=">Vitor's comments</a></li>
+<li class="on"><code>[X]</code> Submit camera-ready version <a href="//MjAyMS0wNC0xMlQxNDoyNDo1MC4wMDBaO09JRDIwMjEgPG9pZDIwMjFAZWFzeWNoYWlyLm9yZz4=">email instructions</a></li>
+<li class="on"><code>[X]</code> Save in another format as pre-print</li>
+<li class="trans"><code>[-]</code> Update <a href="../../Nextcloud/org/pub-info.html#ID-dd370e8f-350b-447e-854e-cd905f2dc79f">Trackers</a>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com Website</li>
+<li class="off"><code>[&#xa0;]</code> Google Scholar</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org98e841e" class="outline-4">
+<h4 id="org98e841e"><span class="section-number-4">7.2.2</span> Upload pre-print</h4>
+<div class="outline-text-4" id="text-7-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org5d2025d"></a>Upload pre-print to AWS bucket<br /></li>
+<li><a id="orga5da352"></a><span class="done DONE">DONE</span> Upload pre-print to Zenodo<br />
+<div class="outline-text-5" id="text-7-2-2-2">
+</div>
+</li>
+<li><a id="orge74447d"></a>Upload pre-print to TCD TARA<br />
+<ol class="org-ol">
+<li><a id="org96fee37"></a><span class="done DONE">DONE</span> Create RSS Entry<br />
+<div class="outline-text-6" id="text-7-2-2-3-1">
+<ul class="org-ul">
+<li>Wait for approval</li>
+</ul>
+</div>
+</li>
+<li><a id="org7bc0d03"></a><span class="done DONE">DONE</span> Upload pre-print to RSS<br />
+<div class="outline-text-6" id="text-7-2-2-3-2">
+<ul class="org-ul">
+<li>Wait for approval</li>
+</ul>
+</div>
+</li>
+<li><a id="orgdf302f8"></a><span class="done DONE">DONE</span> Update entries<br />
+<div class="outline-text-6" id="text-7-2-2-3-3">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1406f19" class="outline-3">
+<h3 id="org1406f19"><span class="section-number-3">7.3</span> Presentation: <code>[0/2]</code></h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Prepare slides
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Check time of presentation</li>
+<li class="off"><code>[&#xa0;]</code> Funding acknowledgements</li>
+<li class="off"><code>[&#xa0;]</code> Contact details</li>
+<li class="off"><code>[&#xa0;]</code> Resources</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Upload slides
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Slideshare</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb03447a" class="outline-3">
+<h3 id="orgb03447a"><span class="section-number-3">7.4</span> Published: <code>[0/1]</code></h3>
+<div class="outline-text-3" id="text-7-4">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Update trackers
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Theme-E</li>
+<li class="off"><code>[&#xa0;]</code> harshp.com website</li>
+<li class="off"><code>[&#xa0;]</code> TCD/RSS</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf0ab96e" class="outline-2">
+<h2 id="orgf0ab96e"><span class="section-number-2">8</span> Crowd-sourcing Issues Across Domains for Automated Generation of Legal Complaints Regarding Consent</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-orgfec8f93" class="outline-3">
+<h3 id="orgfec8f93"><span class="section-number-3">8.1</span> <span class="done DONE">DONE</span> Reviews received: <code>[2/2]</code></h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Analyse reviews (table with statement and action items)</li>
+<li class="on"><code>[X]</code> Make changes as per actions</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1890628" class="outline-3">
+<h3 id="org1890628"><span class="section-number-3">8.2</span> Camera-ready: <code>[1/1]</code></h3>
+<div class="outline-text-3" id="text-8-2">
+</div>
+<div id="outline-container-org78abd01" class="outline-4">
+<h4 id="org78abd01"><span class="section-number-4">8.2.1</span> <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[3/4]</code></h4>
+<div class="outline-text-4" id="text-8-2-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare camera-ready version</li>
+<li class="on"><code>[X]</code> Submit camera-ready version</li>
+<li class="on"><code>[X]</code> Save in another format as pre-print</li>
+<li class="trans"><code>[-]</code> Update <a href="../../Nextcloud/org/pub-info.html#ID-dd370e8f-350b-447e-854e-cd905f2dc79f">Trackers</a>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com Website</li>
+<li class="off"><code>[&#xa0;]</code> Google Scholar</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8fa184e" class="outline-4">
+<h4 id="org8fa184e"><span class="section-number-4">8.2.2</span> Upload pre-print</h4>
+<div class="outline-text-4" id="text-8-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org53e3bff"></a><span class="done DONE">DONE</span> Upload pre-print to Zenodo<br />
+<div class="outline-text-5" id="text-8-2-2-1">
+</div>
+</li>
+<li><a id="org8fba3a9"></a><span class="done DONE">DONE</span> Upload CHI pre-print to TCD TARA <code>[3/3]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span><br />
+<div class="outline-text-5" id="text-8-2-2-2">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Create RSS Entry</li>
+<li class="on"><code>[X]</code> Upload pre-print to RSS</li>
+<li class="on"><code>[X]</code> Update entries</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4bbe941" class="outline-3">
+<h3 id="org4bbe941"><span class="section-number-3">8.3</span> <span class="done DONE">DONE</span> CHI Presentation: <code>[3/3]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare slides
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check time of presentation</li>
+<li class="on"><code>[X]</code> Funding acknowledgements</li>
+<li class="on"><code>[X]</code> Contact details</li>
+<li class="on"><code>[X]</code> Resources</li>
+</ul></li>
+<li class="on"><code>[X]</code> <a href="//MjAyMS0wNC0yOFQyMToyMTozMS4wMDBaO2RhcmstcGF0dGVybnNAZ29vZ2xlZ3JvdXBzLmNvbQ==">email: add slides</a></li>
+<li class="on"><code>[X]</code> Upload slides
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Slideshare</li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-orgc7d1cad" class="outline-4">
+<h4 id="orgc7d1cad"><span class="section-number-4">8.3.1</span> <span class="done DONE">DONE</span> Register for IEEE S&amp;P&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h4>
+<div class="outline-text-4" id="text-8-3-1">
+<ul class="org-ul">
+<li><a href="https://www.ieee-security.org/TC/SP2021/">link to website</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc01504b" class="outline-3">
+<h3 id="orgc01504b"><span class="section-number-3">8.4</span> <span class="done DONE">DONE</span> Register for CHI Conference&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h3>
+<div class="outline-text-3" id="text-8-4">
+</div>
+</div>
+<div id="outline-container-org3119b54" class="outline-3">
+<h3 id="org3119b54"><span class="section-number-3">8.5</span> <span class="done DONE">DONE</span> CHI Published: <code>[0/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h3>
+<div class="outline-text-3" id="text-8-5">
+</div>
+</div>
+</div>
+<div id="outline-container-org99b260e" class="outline-2">
+<h2 id="org99b260e"><span class="section-number-2">9</span> [How] Do Users Benefit From Giving Consent?</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org1bf04e6" class="outline-3">
+<h3 id="org1bf04e6"><span class="section-number-3">9.1</span> Camera-ready: <code>[1/1]</code></h3>
+<div class="outline-text-3" id="text-9-1">
+</div>
+<div id="outline-container-org1ed720f" class="outline-4">
+<h4 id="org1ed720f"><span class="section-number-4">9.1.1</span> <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[3/4]</code></h4>
+<div class="outline-text-4" id="text-9-1-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare camera-ready version</li>
+<li class="on"><code>[X]</code> Submit camera-ready version</li>
+<li class="on"><code>[X]</code> Save in another format as pre-print</li>
+<li class="trans"><code>[-]</code> Update <a href="../../Nextcloud/org/pub-info.html#ID-dd370e8f-350b-447e-854e-cd905f2dc79f">Trackers</a>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com Website</li>
+<li class="off"><code>[&#xa0;]</code> Google Scholar</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbdb1494" class="outline-4">
+<h4 id="orgbdb1494"><span class="section-number-4">9.1.2</span> Upload pre-print</h4>
+<div class="outline-text-4" id="text-9-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org61d8ce1"></a><span class="done DONE">DONE</span> Upload pre-print to Zenodo<br />
+<div class="outline-text-5" id="text-9-1-2-1">
+</div>
+</li>
+<li><a id="orgd693f36"></a><span class="done DONE">DONE</span> Upload ConPro pre-print to TCD TARA&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span><br />
+<div class="outline-text-5" id="text-9-1-2-2">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Create RSS Entry</li>
+<li class="on"><code>[X]</code> Upload pre-print to RSS</li>
+<li class="on"><code>[X]</code> Update entries</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf2e4dfb" class="outline-3">
+<h3 id="orgf2e4dfb"><span class="section-number-3">9.2</span> <span class="done DONE">DONE</span> ConPro Presentation: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h3>
+<div class="outline-text-3" id="text-9-2">
+<ul class="org-ul">
+<li><span class="timestamp-wrapper"><span class="timestamp">[2021-03-18 Thu] </span></span> six minutes with nine minutes for discussion (so
+fifteen minutes total) <a href="//MjAyMS0wMy0xOFQxNDowNDoyMC4wMDBaO0NvblBybyDigJkyMSBIb3RDUlAgPGNvbnBybzIxQGllZWUtc2VjdXJpdHkub3JnPg==">organiser's email</a>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Prepare slides
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Check time of presentation</li>
+<li class="off"><code>[&#xa0;]</code> Funding acknowledgements</li>
+<li class="off"><code>[&#xa0;]</code> Contact details</li>
+<li class="off"><code>[&#xa0;]</code> Resources</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Upload slides
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Slideshare</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-org9222cd3" class="outline-4">
+<h4 id="org9222cd3"><span class="section-number-4">9.2.1</span> <span class="done DONE">DONE</span> Send name of Speaker to ConPro</h4>
+<div class="outline-text-4" id="text-9-2-1">
+<ul class="org-ul">
+<li><a href="//MjAyMS0wMy0xOFQxNDowNDoyMC4wMDBaO0NvblBybyDigJkyMSBIb3RDUlAgPGNvbnBybzIxQGllZWUtc2VjdXJpdHkub3JnPg==">email from organisers</a> asking for name of expected speaker</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5f0e3a7" class="outline-3">
+<h3 id="org5f0e3a7"><span class="section-number-3">9.3</span> <span class="done DONE">DONE</span> ConPro Published: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h3>
+<div class="outline-text-3" id="text-9-3">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Update trackers
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com website</li>
+<li class="on"><code>[X]</code> TCD/RSS</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf0b6c07" class="outline-2">
+<h2 id="orgf0b6c07"><span class="section-number-2">10</span> <span class="todo WAIT">WAIT</span> Standardization and the Governance of Artificial Intelligence Standards&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> post text on website</li>
+</ul>
+</div>
+<div id="outline-container-orgd20300a" class="outline-3">
+<h3 id="orgd20300a"><span class="section-number-3">10.1</span> Upload pre-print</h3>
+<div class="outline-text-3" id="text-10-1">
+</div>
+<div id="outline-container-org8ac5f29" class="outline-4">
+<h4 id="org8ac5f29"><span class="section-number-4">10.1.1</span> Upload AI standardisation glossary pre-print to Zenodo&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h4>
+</div>
+<div id="outline-container-org969b5d5" class="outline-4">
+<h4 id="org969b5d5"><span class="section-number-4">10.1.2</span> Upload AI standardisation glossary pre-print to TCD TARA&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h4>
+<div class="outline-text-4" id="text-10-1-2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Create RSS Entry</li>
+<li>[ ]Upload pre-print to RSS</li>
+<li>[ ]Update entries</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9d92be4" class="outline-4">
+<h4 id="org9d92be4"><span class="section-number-4">10.1.3</span> Ask Dave/PJ about pre-print for AI standardisation glossary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOMEDAY">__SOMEDAY</span></span></h4>
+<div class="outline-text-4" id="text-10-1-3">
+<ul class="org-ul">
+<li><a href="//MjAyMS0wMi0yMVQxODoxNzo0MC4wMDBaOyJIYXJzaHZhcmRoYW4gSi4gUGFuZGl0IiA8aGFyc2h2YXJkaGFuLnBhbmRpdEBhZGFwdGNlbnRyZS5pZT4=">email thread</a> dated <span class="timestamp-wrapper"><span class="timestamp">[2021-02-21 Sun]</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6e12677" class="outline-3">
+<h3 id="org6e12677"><span class="section-number-3">10.2</span> AI standardisation glossary Published: <code>[0/1]</code></h3>
+<div class="outline-text-3" id="text-10-2">
+<ul class="org-ul">
+<li class="trans"><code>[-]</code> Update trackers
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com website</li>
+<li class="off"><code>[&#xa0;]</code> TCD/RSS</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgeb1db1e" class="outline-2">
+<h2 id="orgeb1db1e"><span class="section-number-2">11</span> Comparison of notice requirements for consent between ISO/IEC 29184:2020 and GDPR</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org9696a37" class="outline-3">
+<h3 id="org9696a37"><span class="section-number-3">11.1</span> <span class="done DONE">DONE</span> 29184 x GDPR Published: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h3>
+<div class="outline-text-3" id="text-11-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Update trackers
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com website</li>
+<li class="on"><code>[X]</code> TCD/RSS</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org20a2f7e" class="outline-2">
+<h2 id="org20a2f7e"><span class="section-number-2">12</span> Semantic Schema Mapping for Interoperable Data-Exchange <code>[5/5]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="schema">schema</span></span></h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-orgf5f7ac2" class="outline-3">
+<h3 id="orgf5f7ac2"><span class="section-number-3">12.1</span> <span class="done DONE">DONE</span> Submitting the Paper: <code>[7/8]</code></h3>
+<div class="outline-text-3" id="text-12-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check format and page requirements</li>
+<li class="on"><code>[X]</code> Check single/double blind requirements</li>
+<li class="on"><code>[X]</code> Acknowledgements for funding</li>
+<li class="on"><code>[X]</code> Email addresses</li>
+<li class="trans"><code>[-]</code> OA link in abstract</li>
+<li class="on"><code>[X]</code> Link to resources</li>
+<li class="on"><code>[X]</code> Submit paper</li>
+<li class="on"><code>[X]</code> Save copy as submitted version</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org26e44b3" class="outline-3">
+<h3 id="org26e44b3"><span class="section-number-3">12.2</span> <span class="done DONE">DONE</span> Reviews received: <code>[2/2]</code></h3>
+<div class="outline-text-3" id="text-12-2">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Analyse reviews (table with statement and action items)</li>
+<li class="on"><code>[X]</code> Make changes as per actions</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1f12e79" class="outline-3">
+<h3 id="org1f12e79"><span class="section-number-3">12.3</span> <span class="done DONE">DONE</span> Camera-ready: <code>[2/2]</code></h3>
+<div class="outline-text-3" id="text-12-3">
+</div>
+<div id="outline-container-org3a4ca3f" class="outline-4">
+<h4 id="org3a4ca3f"><span class="section-number-4">12.3.1</span> <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[3/4]</code></h4>
+<div class="outline-text-4" id="text-12-3-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare camera-ready version</li>
+<li class="on"><code>[X]</code> Submit camera-ready version</li>
+<li class="trans"><code>[-]</code> Save in another format as pre-print</li>
+<li class="on"><code>[X]</code> Update <a href="../../Nextcloud/org/pub-info.html#ID-dd370e8f-350b-447e-854e-cd905f2dc79f">Trackers</a>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com Website</li>
+<li class="on"><code>[X]</code> Google Scholar</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb1513af" class="outline-4">
+<h4 id="orgb1513af"><span class="section-number-4">12.3.2</span> <span class="done DONE">DONE</span> Upload pre-print</h4>
+<div class="outline-text-4" id="text-12-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org4790735"></a><span class="done DONE">DONE</span> Upload pre-print to AWS bucket<br />
+<div class="outline-text-5" id="text-12-3-2-1">
+</div>
+</li>
+<li><a id="org804b7d4"></a><span class="done DONE">DONE</span> Upload pre-print to Zenodo<br />
+<div class="outline-text-5" id="text-12-3-2-2">
+</div>
+</li>
+<li><a id="org25a3c5c"></a><span class="done DONE">DONE</span> Upload pre-print to TCD TARA<br />
+<div class="outline-text-5" id="text-12-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org57dbde2"></a><span class="done DONE">DONE</span> Create RSS Entry<br />
+<div class="outline-text-6" id="text-12-3-2-3-1">
+<ul class="org-ul">
+<li>Wait for approval</li>
+</ul>
+</div>
+</li>
+<li><a id="org3720bec"></a><span class="done DONE">DONE</span> Upload pre-print to RSS<br />
+<div class="outline-text-6" id="text-12-3-2-3-2">
+<ul class="org-ul">
+<li>Wait for approval</li>
+</ul>
+</div>
+</li>
+<li><a id="org1c35e22"></a><span class="done DONE">DONE</span> Update entries<br />
+<div class="outline-text-6" id="text-12-3-2-3-3">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgde0f2bd" class="outline-3">
+<h3 id="orgde0f2bd"><span class="section-number-3">12.4</span> <span class="done DONE">DONE</span> Presentation: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h3>
+<div class="outline-text-3" id="text-12-4">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare slides
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check time of presentation</li>
+<li class="on"><code>[X]</code> Funding acknowledgements</li>
+<li class="on"><code>[X]</code> Contact details</li>
+<li class="on"><code>[X]</code> Resources</li>
+</ul></li>
+<li class="on"><code>[X]</code> Upload slides
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Slideshare</li>
+</ul></li>
+</ul>
+
+<p>
+<b>video presentation:</b>
+</p>
+<ul class="org-ul">
+<li>: <a href="https://drive.google.com/drive/folders/1-_7fIJemjVQ-qOXFXX8p_jf06P4Myzi6?usp=sharing">upload link</a></li>
+</ul>
+</div>
+<div id="outline-container-org04c2126" class="outline-4">
+<h4 id="org04c2126"><span class="section-number-4">12.4.1</span> <span class="done DONE">DONE</span> SCHEMA presentation</h4>
+<div class="outline-text-4" id="text-12-4-1">
+</div>
+</div>
+</div>
+<div id="outline-container-orgfbf7e4d" class="outline-3">
+<h3 id="orgfbf7e4d"><span class="section-number-3">12.5</span> <span class="done DONE">DONE</span> Published: <code>[1/1]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h3>
+<div class="outline-text-3" id="text-12-5">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Update trackers
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com website</li>
+<li class="on"><code>[X]</code> TCD/RSS</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge33ba4a" class="outline-2">
+<h2 id="orge33ba4a"><span class="section-number-2">13</span> A Common Semantic Model of the GDPR Register of Processing Activities <code>[4/4]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="dpv">dpv</span>&#xa0;<span class="ropa">ropa</span></span></h2>
+<div class="outline-text-2" id="text-13">
+</div>
+<div id="outline-container-orgfde0d9c" class="outline-3">
+<h3 id="orgfde0d9c"><span class="section-number-3">13.1</span> <span class="done DONE">DONE</span> Submitting the Paper: <code>[7/8]</code></h3>
+<div class="outline-text-3" id="text-13-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check format and page requirements</li>
+<li class="on"><code>[X]</code> Check single/double blind requirements</li>
+<li class="on"><code>[X]</code> Acknowledgements for funding</li>
+<li class="on"><code>[X]</code> Email addresses</li>
+<li class="trans"><code>[-]</code> OA link in abstract</li>
+<li class="on"><code>[X]</code> Link to resources</li>
+<li class="on"><code>[X]</code> Submit paper</li>
+<li class="on"><code>[X]</code> Save copy as submitted version</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdafb42c" class="outline-3">
+<h3 id="orgdafb42c"><span class="section-number-3">13.2</span> <span class="done DONE">DONE</span> Reviews received: <code>[1/1]</code></h3>
+<div class="outline-text-3" id="text-13-2">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Analyse reviews (table with statement and action items)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb1af76d" class="outline-3">
+<h3 id="orgb1af76d"><span class="section-number-3">13.3</span> <span class="done DONE">DONE</span> Camera-ready: <code>[2/2]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NEXT">__NEXT</span></span></h3>
+<div class="outline-text-3" id="text-13-3">
+</div>
+<div id="outline-container-org91fc49d" class="outline-4">
+<h4 id="org91fc49d"><span class="section-number-4">13.3.1</span> <span class="done DONE">DONE</span> Submit Camera-Ready version <code>[4/4]</code></h4>
+<div class="outline-text-4" id="text-13-3-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare camera-ready version</li>
+<li class="on"><code>[X]</code> Submit camera-ready version</li>
+<li class="on"><code>[X]</code> Save in another format as pre-print</li>
+<li class="on"><code>[X]</code> Update <a href="../../Nextcloud/org/pub-info.html#ID-dd370e8f-350b-447e-854e-cd905f2dc79f">Trackers</a>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Theme-E</li>
+<li class="on"><code>[X]</code> harshp.com Website</li>
+<li class="on"><code>[X]</code> Google Scholar</li>
+<li class="on"><code>[X]</code> TCD / RSS</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0032e8" class="outline-4">
+<h4 id="orgf0032e8"><span class="section-number-4">13.3.2</span> <span class="done DONE">DONE</span> Upload pre-print</h4>
+<div class="outline-text-4" id="text-13-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org49e28d2"></a><span class="done ABRT">ABRT</span> Upload pre-print to AWS bucket<br />
+<div class="outline-text-5" id="text-13-3-2-1">
+</div>
+</li>
+<li><a id="org17b59f3"></a><span class="done DONE">DONE</span> Upload pre-print to Zenodo<br />
+<div class="outline-text-5" id="text-13-3-2-2">
+</div>
+</li>
+<li><a id="org69f47ec"></a><span class="done DONE">DONE</span> Upload pre-print to TCD TARA<br />
+<div class="outline-text-5" id="text-13-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org2e979e3"></a><span class="done DONE">DONE</span> Create RSS Entry<br />
+<div class="outline-text-6" id="text-13-3-2-3-1">
+<ul class="org-ul">
+<li>Wait for approval</li>
+</ul>
+</div>
+</li>
+<li><a id="org4a16cbf"></a><span class="done DONE">DONE</span> Upload pre-print to RSS<br />
+<div class="outline-text-6" id="text-13-3-2-3-2">
+<ul class="org-ul">
+<li>Wait for approval</li>
+</ul>
+</div>
+</li>
+<li><a id="orga29288a"></a><span class="done DONE">DONE</span> Update entries<br />
+<div class="outline-text-6" id="text-13-3-2-3-3">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb07de4c" class="outline-3">
+<h3 id="orgb07de4c"><span class="section-number-3">13.4</span> <span class="done DONE">DONE</span> Presentation: <code>[2/2]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__SOON">__SOON</span></span></h3>
+<div class="outline-text-3" id="text-13-4">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Prepare slides
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check time of presentation</li>
+<li class="on"><code>[X]</code> Funding acknowledgements</li>
+<li class="on"><code>[X]</code> Contact details</li>
+<li class="on"><code>[X]</code> Resources</li>
+</ul></li>
+<li class="on"><code>[X]</code> Upload slides
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Slideshare</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgab58b0a" class="outline-2">
+<h2 id="orgab58b0a"><span class="section-number-2">14</span> Just-in-Time” Generation of Datasets by Considering Structured Representations of Given Consent for GDPR Compliance"</h2>
+<div class="outline-text-2" id="text-14">
+</div>
+<div id="outline-container-org986200d" class="outline-3">
+<h3 id="org986200d"><span class="section-number-3">14.1</span> Reviews &amp; Camera-ready</h3>
+<div class="outline-text-3" id="text-14-1">
+</div>
+<div id="outline-container-org95a612f" class="outline-4">
+<h4 id="org95a612f"><span class="section-number-4">14.1.1</span> <span class="done DONE">DONE</span> Upload pre-print&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__NOW">__NOW</span></span></h4>
+<div class="outline-text-4" id="text-14-1-1">
+</div>
+</div>
+</div>
+<div id="outline-container-org600b7b6" class="outline-3">
+<h3 id="org600b7b6"><span class="section-number-3">14.2</span> Published</h3>
+<div class="outline-text-3" id="text-14-2">
+<p>
+Change state to PUBLISHED
+</p>
+</div>
+<div id="outline-container-org6dc9444" class="outline-4">
+<h4 id="org6dc9444"><span class="section-number-4">14.2.1</span> update entry with proceedings in harshp.com</h4>
+</div>
+<div id="outline-container-org6cf065a" class="outline-4">
+<h4 id="org6cf065a"><span class="section-number-4">14.2.2</span> update entry with proceedings in OpenScience</h4>
+</div>
+<div id="outline-container-org404e773" class="outline-4">
+<h4 id="org404e773"><span class="section-number-4">14.2.3</span> update entry with proceedings in TARA</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org216bfb5" class="outline-2">
+<h2 id="org216bfb5"><span class="section-number-2">15</span> Standardisation, Data Interoperability, and GDPR</h2>
+<div class="outline-text-2" id="text-15">
+</div>
+</div>
+<div id="outline-container-orgb702ad4" class="outline-2">
+<h2 id="orgb702ad4"><span class="section-number-2">16</span> Creating A Vocabulary for Data Privacy</h2>
+<div class="outline-text-2" id="text-16">
+</div>
+</div>
+<div id="outline-container-orgeaf83dc" class="outline-2">
+<h2 id="orgeaf83dc"><span class="section-number-2">17</span> Explaining Disclosure Decisions Over Personal Data</h2>
+<div class="outline-text-2" id="text-17">
+</div>
+</div>
+<div id="outline-container-org4eb3a4f" class="outline-2">
+<h2 id="org4eb3a4f"><span class="section-number-2">18</span> OPN: Open Notice Receipt Schema</h2>
+</div>
+<div id="outline-container-org52ab710" class="outline-2">
+<h2 id="org52ab710"><span class="section-number-2">19</span> Test-driven Approach Towards GDPR Compliance</h2>
+</div>
+<div id="outline-container-org0efd3cd" class="outline-2">
+<h2 id="org0efd3cd"><span class="section-number-2">20</span> GConsent - A Consent Ontology based on the GDPR</h2>
+</div>
+<div id="outline-container-org9225bee" class="outline-2">
+<h2 id="org9225bee"><span class="section-number-2">21</span> Towards Cataloguing Potential Derivations of Personal Data</h2>
+</div>
+<div id="outline-container-orgd157252" class="outline-2">
+<h2 id="orgd157252"><span class="section-number-2">22</span> Towards Generating Policy-compliant Datasets</h2>
+</div>
+<div id="outline-container-orgf868415" class="outline-2">
+<h2 id="orgf868415"><span class="section-number-2">23</span> An Exploration of Data Interoperability for GDPR</h2>
+</div>
+<div id="outline-container-org0544093" class="outline-2">
+<h2 id="org0544093"><span class="section-number-2">24</span> Investigating Conditional Data Value Under GDPR</h2>
+</div>
+<div id="outline-container-org460bb79" class="outline-2">
+<h2 id="org460bb79"><span class="section-number-2">25</span> Exploring GDPR Compliance Over Provenance Graphs Using SHACL</h2>
+</div>
+<div id="outline-container-orgc7fa302" class="outline-2">
+<h2 id="orgc7fa302"><span class="section-number-2">26</span> An Ontology Design Pattern for Describing Personal Data in Privacy Policies</h2>
+</div>
+<div id="outline-container-org9be80ba" class="outline-2">
+<h2 id="org9be80ba"><span class="section-number-2">27</span> Using Ontology Design Patterns to Define SHACL Shapes</h2>
+</div>
+<div id="outline-container-org0850d11" class="outline-2">
+<h2 id="org0850d11"><span class="section-number-2">28</span> Towards Knowledge-based Systems for GDPR Compliance</h2>
+</div>
+<div id="outline-container-org4503261" class="outline-2">
+<h2 id="org4503261"><span class="section-number-2">29</span> Towards an Open Data Vocabulary for Canvas Driven Innovation Ethics</h2>
+</div>
+<div id="outline-container-orge8155d3" class="outline-2">
+<h2 id="orge8155d3"><span class="section-number-2">30</span> Queryable Provenance Metadata For GDPR Compliance</h2>
+</div>
+<div id="outline-container-orgb598a3d" class="outline-2">
+<h2 id="orgb598a3d"><span class="section-number-2">31</span> Personalised Privacy Policies</h2>
+</div>
+<div id="outline-container-orgb9b92f1" class="outline-2">
+<h2 id="orgb9b92f1"><span class="section-number-2">32</span> Extracting Provenance Metadata from Privacy Policies</h2>
+</div>
+<div id="outline-container-org0ad40eb" class="outline-2">
+<h2 id="org0ad40eb"><span class="section-number-2">33</span> GDPRtEXT - GDPR as a Linked Data Resource</h2>
+</div>
+<div id="outline-container-orgb88f353" class="outline-2">
+<h2 id="orgb88f353"><span class="section-number-2">34</span> GDPR-driven Change Detection in Consent and Activity Metadata</h2>
+</div>
+<div id="outline-container-org6ef9893" class="outline-2">
+<h2 id="org6ef9893"><span class="section-number-2">35</span> Exploring Linked Data For The Automatic Enrichment of Historical Archives</h2>
+</div>
+<div id="outline-container-org6e448ba" class="outline-2">
+<h2 id="org6e448ba"><span class="section-number-2">36</span> Exploring Linked Data For The Automatic Enrichment of Historical Archives</h2>
+</div>
+<div id="outline-container-orgae0e2bd" class="outline-2">
+<h2 id="orgae0e2bd"><span class="section-number-2">37</span> Discussing Ethical Impacts in Research and Innovation: The Ethics Canvas</h2>
+</div>
+<div id="outline-container-org1e04fff" class="outline-2">
+<h2 id="org1e04fff"><span class="section-number-2">38</span> GDPR Data Interoperability Model</h2>
+</div>
+<div id="outline-container-orgf6a97ed" class="outline-2">
+<h2 id="orgf6a97ed"><span class="section-number-2">39</span> Ease and Ethics of User Profiling in Black Mirror</h2>
+</div>
+<div id="outline-container-org6e6f9aa" class="outline-2">
+<h2 id="org6e6f9aa"><span class="section-number-2">40</span> Modelling provenance for GDPR compliance using linked open data vocabularies</h2>
+</div>
+<div id="outline-container-orgf3cc44f" class="outline-2">
+<h2 id="orgf3cc44f"><span class="section-number-2">41</span> Compliance through Informed Consent: Semantic Based Consent Permission and Data Management Model</h2>
+</div>
+<div id="outline-container-org631faa3" class="outline-2">
+<h2 id="org631faa3"><span class="section-number-2">42</span> Linked Data Contracts to Support Data Protection and Data Ethics in the Sharing of Scientific Data</h2>
+</div>
+<div id="outline-container-org1ecccbd" class="outline-2">
+<h2 id="org1ecccbd"><span class="section-number-2">43</span> Utilising Semantic Web Ontologies to publish Experimental Workflows</h2>
+</div>
+<div id="outline-container-org26f1002" class="outline-2">
+<h2 id="org26f1002"><span class="section-number-2">44</span> The Use of Open Data to Improve the Repeatability of Adaptivity and Personalisation Experiment</h2>
+</div>
+<div id="outline-container-orgd4d5d8b" class="outline-2">
+<h2 id="orgd4d5d8b"><span class="section-number-2">45</span> A model for contextual data sharing in smartphone applications</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Harshvardhan J. Pandit</p>
+<p class="date">Created: 2021-12-29 Wed 21:22</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.2 (<a href="https://orgmode.org">Org</a> mode 9.4.4)</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
